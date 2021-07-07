@@ -1,0 +1,267 @@
+body{
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    overflow-x: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container{
+    background-image: url(IMAGES/bg-desktop.png);
+    position: relative;
+    background-color: rgb(12,18,44);
+    height: 400px;
+    width: 900px;
+    left: 180px;
+    top: 130px;
+    border-radius: 10px;
+    margin: auto;
+}
+.container img{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    width: 900px;
+}
+.disp{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.disp-img img{
+    position: absolute;
+    top: 30px;
+}
+
+.logo-items{
+    /* width: 250px; */
+    width: 25%;
+    height: 130px;
+    background-color:rgb(30,44,105);
+    border-radius: 0px 70px 0px 0px;
+    position: relative;
+    left: 150px;
+    top: 120px;
+}
+
+.logo-items img{
+    width: 125px;
+    height: 30px;
+    bottom: 80px;
+    left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.gen-bg{
+    display: flex;
+}
+.bg{
+    background-color: rgb(14,16,44);
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    top: 70px;
+    left: 20px;
+    margin-left: 10px;
+}
+
+.bg img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 11px;
+    left: 11px;
+
+}
+
+.notify{
+    background-color:rgb(30,44,105);
+    border-radius: 10px;
+    /* width: 370px; */
+    width: 37%;
+    height: 120px; 
+    position: relative;
+    right: -170px;
+    bottom: -130px;
+}
+
+.notify p{
+    color: gray;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    padding-bottom: 5px;
+}
+
+.notify p span{
+    color: white;
+}
+.notify .gradient{
+    border-radius: 10px;
+    width: 280px;
+    height: 13px;
+    background-color: rgb(12,18,44);
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.notify .gradient1{
+    border-radius: 10px;
+    width: 220px;
+    height: 11px;
+    background-image: linear-gradient(to right, rgb(253,154,150), rgb(249,84,145));
+    position: relative;
+    top: 18px;
+    left: 21px;
+}
+
+.notify .circle{
+    border-radius: 360px;
+    background-color: white;
+    height: 11px;
+    width: 11px;
+    position: relative;
+    left: 230px;
+    top: 7px;
+}
+
+.white{
+    background-color: white;
+    border-radius: 10px;
+    /* width: 150px; */
+    width: 45%;
+    height: 55px;
+    position: relative;
+    top: -180px;
+    left: 180px;
+}
+.angle{
+    width: 0;
+    height: 0;
+    position: relative;
+    border-bottom-right-radius: 2px;
+    border-left: 23px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 20px solid white;
+    bottom: 188px;
+    left: 307px;
+}
+
+.white strong{
+    color: #000;
+}
+.white p{
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+.para1{
+    position: relative;
+    bottom: 40px;
+    font-size:10px;
+}
+
+.para2{
+    position: relative;
+    bottom: 65px;    
+    left: 243px;
+    font-size:10px;
+}
+
+@media(max-width:850px){ 
+    body{
+        background-image: url(IMAGES/bg-mobile.png);
+        overflow-x: hidden;
+    }
+    
+    .disp{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .logo-items{
+        width: 50%;
+        position: absolute;
+        top: 65px;
+        left: 110px;
+    }
+    .notify{
+        width: 60%;
+        bottom: -230px;
+        left: 90px;
+        /* background: none; */
+    }
+
+    .notify p{
+        top: 30px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .notify .gradient{
+        width: 80%;
+        top: 20px;
+        margin-top: 15px;
+        
+    }
+
+    .notify .gradient1{
+        width: 55%;
+        top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .notify .circle{
+        top: -8px;
+        left: 140px;
+        margin-bottom: 10px;
+    }
+
+    .para2{
+        left: 163px;
+        margin-bottom: 10px;
+    }
+
+    .notify .para2 p{
+        margin-top: -12px;
+    }
+
+    .white{
+        position: absolute;
+        top: 100px;
+        left: 60px;
+    }
+    
+    .white p{
+        top: 15px;
+        left: 15px;
+        font-size: 20px;
+    }
+
+    .container img{
+        display: flex;
+        flex-direction: column; 
+    }
+    .container{
+       position: relative;
+       left: -180px ;
+       background-image: url(IMAGES/bg-mobile.png);
+       height: 600px;
+       width: 400px;
+    }
+    
+    body{
+        background-image: none
+    }
+    .angle{
+        position: relative;
+        bottom: 5px;
+        left: 145px;
+    }
+}
